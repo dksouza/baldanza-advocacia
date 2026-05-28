@@ -27,19 +27,19 @@ export const Hero: React.FC<ReadonlyHeroProps> = ({
   const repeatedWords = [...marqueeWords, ...marqueeWords, ...marqueeWords, ...marqueeWords];
 
   return (
-    <section className="relative min-h-[100dvh] flex items-center pt-24">
+    <section className="relative min-h-[100dvh] flex items-center pt-32 pb-40 md:pt-40 md:pb-48 lg:pb-32">
       <motion.div style={{ opacity: heroOpacity }} className="absolute inset-0 z-0 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-obsidian-deep/60 to-obsidian-deep z-10"></div>
         <div className="absolute inset-0 god-rays"></div>
         <img className="w-full h-full object-cover grayscale opacity-20 scale-110" alt="Background" src={backgroundImage} />
       </motion.div>
       
-      <motion.div style={{ opacity: heroOpacity, y: heroY }} className="absolute right-0 top-1/4 w-1/3 h-2/3 pointer-events-none hidden lg:block floating opacity-40">
+      <motion.div style={{ opacity: heroOpacity, y: heroY }} className="absolute right-0 top-[10%] xl:top-1/4 w-1/3 h-2/3 pointer-events-none hidden lg:block floating opacity-40">
         <img className="w-full h-full object-contain mix-blend-screen" alt="Floating Scale" src={floatingImage} />
       </motion.div>
       
       <motion.div style={{ opacity: heroOpacity, y: heroY }} className="relative z-20 max-w-container-max mx-auto px-6 md:px-inner-padding w-full">
-        <div className="max-w-4xl mt-12 md:mt-0">
+        <div className="max-w-4xl mt-12 md:mt-16 lg:mt-0">
           <FadeIn delay={0.2} direction="up">
             <span className="font-label-caps text-[10px] md:text-label-caps text-tertiary mb-6 md:mb-8 block tracking-[0.3em] md:tracking-[0.5em] opacity-80">{subtitle}</span>
             <h1 className="font-display-lg text-4xl sm:text-5xl md:text-display-lg text-white mb-8 md:mb-10 leading-[1.1] md:leading-[0.95] tracking-tighter">

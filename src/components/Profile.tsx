@@ -13,7 +13,7 @@ export interface ReadonlyProfileProps {
 }
 
 export const Profile: React.FC<ReadonlyProfileProps> = ({
-  image, signatureText, subtitle, titlePart1, titleHighlight, description, bulletPoints, ctaButton
+  image, subtitle, titlePart1, titleHighlight, description, bulletPoints, ctaButton
 }) => {
   return (
     <section className="py-section-padding bg-black/40 relative">
