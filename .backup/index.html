@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 
-<html class="dark" lang="pt-BR"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Naiara Baldanza Advocacia | Cinematic Luxury Legal</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&amp;family=Montserrat:wght@100;300;400;500;600&amp;family=Sora:wght@400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="dark" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Naiara Baldanza Advocacia</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&amp;family=Montserrat:wght@100;300;400;500;600&amp;family=Sora:wght@400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -87,50 +91,56 @@
                         "label-caps": ["Sora"]
                     },
                     "fontSize": {
-                        "headline-md": ["36px", {"lineHeight": "1.3", "fontWeight": "500"}],
-                        "body-lg": ["18px", {"lineHeight": "1.7", "letterSpacing": "0.02em", "fontWeight": "300"}],
-                        "display-lg-mobile": ["56px", {"lineHeight": "1.1", "fontWeight": "800"}],
-                        "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "700"}],
-                        "display-lg": ["96px", {"lineHeight": "1.0", "letterSpacing": "-0.04em", "fontWeight": "800"}],
-                        "body-md": ["16px", {"lineHeight": "1.8", "fontWeight": "300"}],
-                        "label-caps": ["11px", {"lineHeight": "1.0", "letterSpacing": "0.3em", "fontWeight": "600"}]
+                        "headline-md": ["36px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "1.7", "letterSpacing": "0.02em", "fontWeight": "300" }],
+                        "display-lg-mobile": ["56px", { "lineHeight": "1.1", "fontWeight": "800" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "display-lg": ["96px", { "lineHeight": "1.0", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+                        "body-md": ["16px", { "lineHeight": "1.8", "fontWeight": "300" }],
+                        "label-caps": ["11px", { "lineHeight": "1.0", "letterSpacing": "0.3em", "fontWeight": "600" }]
                     }
                 },
             },
         }
     </script>
-<style>
+    <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 1, 'wght' 200, 'GRAD' 0, 'opsz' 24;
             color: #e9c349;
         }
+
         .obsidian-texture {
             background-color: #050505;
-            background-image: 
+            background-image:
                 radial-gradient(at 0% 0%, rgba(226, 200, 129, 0.05) 0px, transparent 50%),
                 radial-gradient(at 100% 100%, rgba(226, 200, 129, 0.03) 0px, transparent 50%);
         }
+
         .gold-vein {
             background: linear-gradient(135deg, transparent 45%, rgba(226, 200, 129, 0.1) 48%, rgba(226, 200, 129, 0.3) 50%, rgba(226, 200, 129, 0.1) 52%, transparent 55%);
             background-size: 200% 200%;
         }
+
         .glass-card {
             background: rgba(15, 15, 15, 0.4);
             backdrop-filter: blur(40px);
             border: 1px solid rgba(233, 195, 73, 0.15);
             transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
         }
+
         .glass-card:hover {
             border-color: rgba(233, 195, 73, 0.5);
             background: rgba(20, 20, 20, 0.6);
             transform: translateY(-5px);
         }
+
         .text-gold-gradient {
             background: linear-gradient(135deg, #e2c881 0%, #ffdea5 50%, #e9c349 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             filter: drop-shadow(0 0 8px rgba(226, 200, 129, 0.3));
         }
+
         .metallic-shimmer {
             position: relative;
             overflow: hidden;
@@ -138,13 +148,16 @@
             background-size: 200% 100%;
             transition: 0.5s;
         }
+
         .metallic-shimmer:hover {
             background-position: 100% 0;
             box-shadow: 0 0 30px rgba(233, 195, 73, 0.4);
         }
+
         .god-rays {
             background: radial-gradient(circle at 50% -20%, rgba(233, 195, 73, 0.15) 0%, transparent 70%);
         }
+
         .shimmer-particle {
             position: absolute;
             width: 2px;
@@ -154,425 +167,575 @@
             filter: blur(1px);
             animation: float 10s infinite linear;
         }
+
         @keyframes float {
-            0% { transform: translateY(0) translateX(0); opacity: 0; }
-            50% { opacity: 0.8; }
-            100% { transform: translateY(-100vh) translateX(50px); opacity: 0; }
+            0% {
+                transform: translateY(0) translateX(0);
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0.8;
+            }
+
+            100% {
+                transform: translateY(-100vh) translateX(50px);
+                opacity: 0;
+            }
         }
+
         .floating {
             animation: float-element 6s ease-in-out infinite;
         }
+
         @keyframes float-element {
-            0%, 100% { transform: translateY(0) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(2deg); }
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(2deg);
+            }
         }
     </style>
 </head>
+
 <body class="obsidian-texture text-on-background font-body-md overflow-x-hidden">
-<!-- Particles for surreal effect -->
-<div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-<div class="shimmer-particle" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
-<div class="shimmer-particle" style="top: 50%; left: 80%; animation-delay: 2s;"></div>
-<div class="shimmer-particle" style="top: 80%; left: 30%; animation-delay: 4s;"></div>
-<div class="shimmer-particle" style="top: 10%; left: 60%; animation-delay: 6s;"></div>
-</div>
-<!-- TopAppBar -->
-<header class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-2xl border-b border-white/5">
-<div class="flex justify-between items-center max-w-container-max mx-auto px-inner-padding h-24">
-<div class="flex items-center">
-<div class="flex items-center">
-<img src="logo.png" alt="Naiara Baldanza Logo" class="h-20 w-auto object-contain" />
-</div>
-</div>
-<nav class="hidden md:flex gap-12 items-center">
-<a class="text-tertiary font-bold tracking-widest font-label-caps text-[10px]" href="#">HOME</a>
-<a class="text-white/60 hover:text-gold-shimmer transition-colors font-label-caps text-[10px]" href="#quem-somos">QUEM SOMOS</a>
-<a class="text-white/60 hover:text-gold-shimmer transition-colors font-label-caps text-[10px]" href="#areas">ÁREAS</a>
-<a class="text-white/60 hover:text-gold-shimmer transition-colors font-label-caps text-[10px]" href="#blog">BLOG</a>
-<a class="text-white/60 hover:text-gold-shimmer transition-colors font-label-caps text-[10px]" href="#contato">CONTATO</a>
-</nav>
-<button class="metallic-shimmer text-obsidian-deep font-label-caps text-[10px] px-8 py-3 tracking-widest font-bold">
-            CONSULTORIA
-        </button>
-</div>
-</header>
-<!-- Hero Section -->
-<section class="relative min-h-screen flex items-center pt-24 overflow-hidden">
-<div class="absolute inset-0 z-0">
-<div class="absolute inset-0 bg-gradient-to-b from-transparent via-obsidian-deep/60 to-obsidian-deep z-10"></div>
-<div class="absolute inset-0 god-rays"></div>
-<img class="w-full h-full object-cover grayscale opacity-20 scale-110" data-alt="Cinematic law library with monumental scale" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChCw4Q_J6kIsektwviSxbVhs4f7XDWMl38QFrW3U5z8xn4zBtv88x76pVi17dkujvB3g8VTK5vWQE9vcqwAS15VrvE8OrPlCXj9IX5HTbLaVCX7Nv6KAVQOS7G7HG2jWFbn716T0dzclHF4qGf58GBMUzny0qUGMfMi6G9Da6cQlW3ByMZrZvgKVSIvD12bit8-aiNtxNOFC2L3VW3aOexRKz-Ux-2JReVVYPSWFEFypf7SryKvje5gzd5eMWJSlh8Rvn4NVQYI2Y"/>
-</div>
-<!-- Surreal Floating Element -->
-<div class="absolute right-0 top-1/4 w-1/3 h-2/3 pointer-events-none hidden lg:block floating opacity-40">
-<img class="w-full h-full object-contain mix-blend-screen" data-alt="Surreal glowing gold scales of justice floating in a dark space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIrVok9pTk2Edd5PdSepburqpRBYFgNZgy_QZlCBRQtaf-cv31TK8fJzCepcolhosfeFR4gPIXEpoTidh2hTh2t6VJkec4ZNjJLqcppAyz_fG6qZAPdmoc9n7QoTxJMnSz_YgMi9CuFaly3mxefkLHP1_P0wBVzwmelNCjDeX9mH6UQKbMEQksSheZoLvoB828vmHokBqSA4H2omLjwdDw0uaUi60Z2qwygPjHVP2oCYFzQ5W5wzfId9kbFHz9kB3LjDdn_3Sd_Tw"/>
-</div>
-<div class="relative z-20 max-w-container-max mx-auto px-inner-padding w-full">
-<div class="max-w-4xl">
-<span class="font-label-caps text-label-caps text-tertiary mb-8 block tracking-[0.5em] opacity-80">EXCELÊNCIA JURÍDICA ESTRATÉGICA</span>
-<h1 class="font-display-lg text-display-lg text-white mb-10 leading-[0.95] tracking-tighter">
-                Nossa missão é <br/><span class="text-gold-gradient italic font-serif">lutar pelos seus direitos</span><br/> com autoridade.
-            </h1>
-<p class="font-body-lg text-body-lg text-white/50 mb-16 max-w-2xl leading-relaxed">
-                Orientação jurídica de alto impacto e proteção personalizada. Atuamos com transparência e foco absoluto na resolução de causas complexas para garantir sua segurança e tranquilidade no cenário contemporâneo.
-            </p>
-<div class="flex flex-wrap gap-8">
-<button class="metallic-shimmer text-obsidian-deep font-label-caps text-[11px] px-12 py-6 tracking-[0.2em] font-bold">
-                    QUERO ENTRAR EM CONTATO
-                </button>
-<button class="group relative px-12 py-6 font-label-caps text-[11px] tracking-[0.2em] text-white border border-white/20 hover:border-tertiary transition-all">
-<span class="relative z-10">NOSSAS ÁREAS</span>
-<div class="absolute inset-0 bg-tertiary scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 opacity-10"></div>
-</button>
-</div>
-</div>
-</div>
-</section>
-<!-- Expertise Areas -->
-<section class="py-section-padding relative" id="areas">
-<div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-tertiary/30 to-transparent"></div>
-<div class="max-w-container-max mx-auto px-inner-padding">
-<div class="flex flex-col md:flex-row justify-between items-end mb-32 gap-8">
-<div class="max-w-2xl">
-<span class="font-label-caps text-label-caps text-tertiary tracking-[0.4em] block mb-4">SOLUÇÕES</span>
-<h2 class="font-headline-lg text-headline-lg text-white text-6xl">Como podemos te ajudar?</h2>
-</div>
-<p class="text-white/40 max-w-sm font-light">Especialidades jurídicas focadas em resultados práticos e proteção de patrimônio e liberdade.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-<!-- Surreal Services Card Grid -->
-<div class="glass-card p-12 group">
-<div class="mb-10 w-12 h-12 flex items-center justify-center border border-tertiary/30 group-hover:bg-tertiary/10 transition-all">
-<span class="material-symbols-outlined text-3xl">gavel</span>
-</div>
-<h3 class="font-headline-md text-2xl mb-6 text-white group-hover:text-gold-shimmer">Direito Cível</h3>
-<p class="font-body-md text-white/50 text-sm leading-relaxed">Soluções em contratos, responsabilidade civil e direitos reais com foco estratégico de alto nível.</p>
-</div>
-<div class="glass-card p-12 group">
-<div class="mb-10 w-12 h-12 flex items-center justify-center border border-tertiary/30 group-hover:bg-tertiary/10 transition-all">
-<span class="material-symbols-outlined text-3xl">work</span>
-</div>
-<h3 class="font-headline-md text-2xl mb-6 text-white group-hover:text-gold-shimmer">Trabalhista</h3>
-<p class="font-body-md text-white/50 text-sm leading-relaxed">Defesa rigorosa dos direitos do trabalhador e consultoria preventiva empresarial personalizada.</p>
-</div>
-<div class="glass-card p-12 group">
-<div class="mb-10 w-12 h-12 flex items-center justify-center border border-tertiary/30 group-hover:bg-tertiary/10 transition-all">
-<span class="material-symbols-outlined text-3xl">shopping_cart</span>
-</div>
-<h3 class="font-headline-md text-2xl mb-6 text-white group-hover:text-gold-shimmer">Consumidor</h3>
-<p class="font-body-md text-white/50 text-sm leading-relaxed">Proteção absoluta contra práticas abusivas e garantia do cumprimento das normas do CDC.</p>
-</div>
-<div class="glass-card p-12 group">
-<div class="mb-10 w-12 h-12 flex items-center justify-center border border-tertiary/30 group-hover:bg-tertiary/10 transition-all">
-<span class="material-symbols-outlined text-3xl">family_restroom</span>
-</div>
-<h3 class="font-headline-md text-2xl mb-6 text-white group-hover:text-gold-shimmer">Famílias</h3>
-<p class="font-body-md text-white/50 text-sm leading-relaxed">Abordagem humanizada e técnica em divórcios, guardas e planejamento sucessório.</p>
-</div>
-<div class="glass-card p-12 group">
-<div class="mb-10 w-12 h-12 flex items-center justify-center border border-tertiary/30 group-hover:bg-tertiary/10 transition-all">
-<span class="material-symbols-outlined text-3xl">account_balance</span>
-</div>
-<h3 class="font-headline-md text-2xl mb-6 text-white group-hover:text-gold-shimmer">Administrativo</h3>
-<p class="font-body-md text-white/50 text-sm leading-relaxed">Atuação cirúrgica em processos administrativos e relações complexas com o poder público.</p>
-</div>
-<div class="glass-card p-12 group">
-<div class="mb-10 w-12 h-12 flex items-center justify-center border border-tertiary/30 group-hover:bg-tertiary/10 transition-all">
-<span class="material-symbols-outlined text-3xl">school</span>
-</div>
-<h3 class="font-headline-md text-2xl mb-6 text-white group-hover:text-gold-shimmer">Concursos</h3>
-<p class="font-body-md text-white/50 text-sm leading-relaxed">Defesa técnica especializada em editais, reprovações injustas e preterição.</p>
-</div>
-<div class="glass-card p-12 group lg:col-span-2">
-<div class="flex justify-between items-start">
-<div class="max-w-md">
-<div class="mb-10 w-12 h-12 flex items-center justify-center border border-tertiary/30 group-hover:bg-tertiary/10 transition-all">
-<span class="material-symbols-outlined text-3xl">elderly</span>
-</div>
-<h3 class="font-headline-md text-2xl mb-6 text-white group-hover:text-gold-shimmer">Previdenciário</h3>
-<p class="font-body-md text-white/50 text-sm leading-relaxed">Consultoria completa para aposentadorias de alto valor, benefícios complexos e revisões estratégicas junto ao INSS.</p>
-</div>
-<div class="hidden md:block opacity-10 group-hover:opacity-20 transition-opacity">
-<span class="material-symbols-outlined text-9xl">history_edu</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Our Office (Surreal/Cinematic Overlap) -->
-<section class="py-section-padding relative overflow-hidden" id="quem-somos">
-<div class="max-w-container-max mx-auto px-inner-padding">
-<div class="grid md:grid-cols-12 gap-gutter items-center">
-<div class="md:col-span-6 relative">
-<div class="absolute -top-20 -left-20 w-80 h-80 bg-tertiary/10 blur-[120px] rounded-full"></div>
-<div class="relative group">
-<div class="absolute -inset-1 bg-gradient-to-r from-tertiary/20 to-transparent blur opacity-40 group-hover:opacity-100 transition duration-1000"></div>
-<div class="relative overflow-hidden aspect-[4/5] md:aspect-square">
-<img class="w-full h-full object-cover grayscale brightness-75 hover:scale-105 transition-transform duration-[2s]" data-alt="Cinematic luxury office with floating dust particles in light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy21YmoNNMa-o5L55WIHf5CiL5KOIsF5lVx2VbmBfTxp5LXYo6u61duqBSYgE8iUxyzNp3iccLMvH-fFeanH7kv__dU7IwQUIO-Vh2KliBB7Wo8Q_ERsdyXl4mUmbvgR4Rj4i396-dyAmr4vBUOC4AW2mT15U0GpdMmphtQ1R4piv61NlKbFkprkrS9970dhnoDzCYFJPyVP1jjvmxLoRmfrpKSP5VFVAYYEgMK4xdBy8iu8o2pfBSPAWmtE8W664VlzgQG-xFfKY"/>
-</div>
-</div>
-<!-- Overlapping surreal elements -->
-<div class="absolute -bottom-10 -right-10 glass-card p-10 hidden lg:block max-w-xs">
-<h4 class="text-tertiary font-label-caps text-xs mb-4 tracking-widest">VISÃO FUTURISTA</h4>
-<p class="text-white/60 text-xs italic">"Redefinindo o conceito de justiça através da inovação tecnológica e empatia humana."</p>
-</div>
-</div>
-<div class="md:col-span-6 md:pl-20 mt-24 md:mt-0">
-<span class="font-label-caps text-label-caps text-tertiary tracking-[0.5em] block mb-8">NOSSA ESSÊNCIA</span>
-<h2 class="font-headline-lg text-6xl text-white mb-12 leading-tight">Compromisso com a <br/><span class="text-gold-gradient">Ética e Lealdade.</span></h2>
-<div class="space-y-10">
-<p class="font-body-lg text-white/50 leading-relaxed">
-                        Nosso escritório nasceu com o propósito de transformar a advocacia em uma experiência de segurança absoluta. Acreditamos que o direito deve ser exercido com técnica impecável e estética refinada.
-                    </p>
-<p class="font-body-lg text-white/50 leading-relaxed border-l border-tertiary/30 pl-8">
-                        Cada caso é tratado de forma exclusiva, analisando todas as nuances microscópicas para construir a melhor defesa estratégica possível.
-                    </p>
-<div class="flex gap-16 pt-12">
-<div>
-<div class="text-5xl font-display-lg text-gold-shimmer mb-2">100%</div>
-<p class="font-label-caps text-[10px] text-white/40 tracking-widest uppercase">Casos Exclusivos</p>
-</div>
-<div>
-<div class="text-5xl font-display-lg text-gold-shimmer mb-2">+10</div>
-<p class="font-label-caps text-[10px] text-white/40 tracking-widest uppercase">Anos de Experiência</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Differentials (Three Surreal Blocks) -->
-<section class="py-section-padding relative">
-<div class="max-w-container-max mx-auto px-inner-padding">
-<div class="grid md:grid-cols-3 gap-0 border border-white/5">
-<div class="glass-card p-16 border-0 border-r border-white/5 hover:bg-tertiary/5 transition-colors">
-<span class="font-label-caps text-tertiary mb-10 block tracking-[0.4em]">MISSÃO</span>
-<p class="text-xl text-white/70 font-light leading-relaxed">Promover soluções jurídicas com excelência inquestionável, assegurando os direitos através de uma advocacia cirúrgica.</p>
-</div>
-<div class="glass-card p-16 border-0 border-r border-white/5 bg-white/[0.02] hover:bg-tertiary/5 transition-colors">
-<span class="font-label-caps text-tertiary mb-10 block tracking-[0.4em]">VISÃO</span>
-<p class="text-xl text-white/70 font-light leading-relaxed">Ser a bússola de justiça em um mundo complexo, reconhecida pela inovação constante e pelo impacto profundo.</p>
-</div>
-<div class="glass-card p-16 border-0 hover:bg-tertiary/5 transition-colors">
-<span class="font-label-caps text-tertiary mb-10 block tracking-[0.4em]">VALORES</span>
-<p class="text-xl text-white/70 font-light leading-relaxed">Ética inabalável, Lealdade aos princípios, Empatia real e Rigor Técnico absoluto em cada vírgula.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Profile Section (The Specialist) -->
-<section class="py-section-padding bg-black/40 relative">
-<div class="absolute top-0 right-0 w-1/2 h-full god-rays rotate-180 opacity-30"></div>
-<div class="max-w-container-max mx-auto px-inner-padding grid md:grid-cols-12 gap-gutter items-center">
-<div class="md:col-span-5 relative group">
-<div class="absolute -inset-10 bg-tertiary/10 blur-[150px] opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></div>
-<div class="relative aspect-[3/4] overflow-hidden grayscale brightness-90 hover:brightness-100 transition-all duration-700">
-<img alt="Dra. Naiara Baldanza" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHbmxc9FC7lxDC775RczpQlILdw296bY_OheeFCyKrGpGqOkMqbqT-4h0WIpwWKj-GRLOEdm6xK6fgp62t9rRpptJ9yqxyICVBgT7llijvMHWBUy6Jr4i8qFUgDvLIJrwX39rnQYvwxA9h2MH7C_t1rjMeSXB2BmwWg5uEpkCzFkiTpVf6lZHXdUFziKPEh2kL9gxku53L-Ea577OehWCUbld5G6WBrcp6TwtYo--ddq0iunCTrjlBk2Bqp0xgHu5JOpQLg5zSwZ8"/>
-</div>
-<!-- Surreal Signature Overlay -->
-<div class="absolute -bottom-16 -right-16 text-[180px] font-display-lg text-tertiary/5 pointer-events-none select-none italic whitespace-nowrap hidden lg:block">
-                Naiara Baldanza
+    <!-- Particles for surreal effect -->
+    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        <div class="shimmer-particle" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
+        <div class="shimmer-particle" style="top: 50%; left: 80%; animation-delay: 2s;"></div>
+        <div class="shimmer-particle" style="top: 80%; left: 30%; animation-delay: 4s;"></div>
+        <div class="shimmer-particle" style="top: 10%; left: 60%; animation-delay: 6s;"></div>
+    </div>
+    <!-- TopAppBar -->
+    <header class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-2xl border-b border-white/5">
+        <div class="flex justify-between items-center max-w-container-max mx-auto px-inner-padding h-24">
+            <div class="flex items-center">
+                <div class="flex items-center">
+                    <img src="logo.png" alt="Naiara Baldanza Logo" class="h-20 w-auto object-contain" />
+                </div>
             </div>
-</div>
-<div class="md:col-span-7 md:pl-24 mt-20 md:mt-0">
-<span class="font-label-caps text-label-caps text-tertiary tracking-[0.5em] block mb-6">A ESPECIALISTA</span>
-<h2 class="font-display-lg text-7xl text-white mb-10 leading-tight">Dra. Naiara <br/><span class="text-gold-gradient">Baldanza</span></h2>
-<div class="space-y-8">
-<p class="font-body-lg text-white/60 leading-relaxed text-xl">
-                    Advogada apaixonada pela justiça e membro ativo do <span class="text-tertiary font-medium">IBDFAM</span>. Minha trajetória é definida pela defesa intransigente e pela busca de soluções que equilibram o rigor da lei com a sensibilidade humana.
+            <nav class="hidden md:flex gap-12 items-center">
+                <a class="text-tertiary font-bold tracking-widest font-label-caps text-[10px]" href="#">HOME</a>
+                <a class="text-white/60 hover:text-gold-shimmer transition-colors font-label-caps text-[10px]"
+                    href="#quem-somos">QUEM SOMOS</a>
+                <a class="text-white/60 hover:text-gold-shimmer transition-colors font-label-caps text-[10px]"
+                    href="#areas">ÁREAS</a>
+                <a class="text-white/60 hover:text-gold-shimmer transition-colors font-label-caps text-[10px]"
+                    href="#blog">BLOG</a>
+                <a class="text-white/60 hover:text-gold-shimmer transition-colors font-label-caps text-[10px]"
+                    href="#contato">CONTATO</a>
+            </nav>
+            <button
+                class="metallic-shimmer text-obsidian-deep font-label-caps text-[10px] px-8 py-3 tracking-widest font-bold">
+                CONSULTORIA
+            </button>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-24 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-obsidian-deep/60 to-obsidian-deep z-10">
+            </div>
+            <div class="absolute inset-0 god-rays"></div>
+            <img class="w-full h-full object-cover grayscale opacity-20 scale-110"
+                data-alt="Cinematic law library with monumental scale"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuChCw4Q_J6kIsektwviSxbVhs4f7XDWMl38QFrW3U5z8xn4zBtv88x76pVi17dkujvB3g8VTK5vWQE9vcqwAS15VrvE8OrPlCXj9IX5HTbLaVCX7Nv6KAVQOS7G7HG2jWFbn716T0dzclHF4qGf58GBMUzny0qUGMfMi6G9Da6cQlW3ByMZrZvgKVSIvD12bit8-aiNtxNOFC2L3VW3aOexRKz-Ux-2JReVVYPSWFEFypf7SryKvje5gzd5eMWJSlh8Rvn4NVQYI2Y" />
+        </div>
+        <!-- Surreal Floating Element -->
+        <div class="absolute right-0 top-1/4 w-1/3 h-2/3 pointer-events-none hidden lg:block floating opacity-40">
+            <img class="w-full h-full object-contain mix-blend-screen"
+                data-alt="Surreal glowing gold scales of justice floating in a dark space"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIrVok9pTk2Edd5PdSepburqpRBYFgNZgy_QZlCBRQtaf-cv31TK8fJzCepcolhosfeFR4gPIXEpoTidh2hTh2t6VJkec4ZNjJLqcppAyz_fG6qZAPdmoc9n7QoTxJMnSz_YgMi9CuFaly3mxefkLHP1_P0wBVzwmelNCjDeX9mH6UQKbMEQksSheZoLvoB828vmHokBqSA4H2omLjwdDw0uaUi60Z2qwygPjHVP2oCYFzQ5W5wzfId9kbFHz9kB3LjDdn_3Sd_Tw" />
+        </div>
+        <div class="relative z-20 max-w-container-max mx-auto px-inner-padding w-full">
+            <div class="max-w-4xl">
+                <span
+                    class="font-label-caps text-label-caps text-tertiary mb-8 block tracking-[0.5em] opacity-80">EXCELÊNCIA
+                    JURÍDICA ESTRATÉGICA</span>
+                <h1 class="font-display-lg text-display-lg text-white mb-10 leading-[0.95] tracking-tighter">
+                    Nossa missão é <br /><span class="text-gold-gradient italic font-serif">lutar pelos seus
+                        direitos</span><br /> com autoridade.
+                </h1>
+                <p class="font-body-lg text-body-lg text-white/50 mb-16 max-w-2xl leading-relaxed">
+                    Orientação jurídica de alto impacto e proteção personalizada. Atuamos com transparência e foco
+                    absoluto na resolução de causas complexas para garantir sua segurança e tranquilidade no cenário
+                    contemporâneo.
                 </p>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-8 py-10 border-y border-white/5">
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-tertiary mt-1">verified</span>
-<span class="font-body-md text-white/70">Especialista em Direito das Famílias e Sucessões</span>
-</div>
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-tertiary mt-1">verified</span>
-<span class="font-body-md text-white/70">Consultoria em Direito Civil e Administrativo</span>
-</div>
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-tertiary mt-1">verified</span>
-<span class="font-body-md text-white/70">Membro efetivo de comissões da OAB/DF</span>
-</div>
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-tertiary mt-1">verified</span>
-<span class="font-body-md text-white/70">Pós-graduada em Processo Estratégico</span>
-</div>
-</div>
-<button class="metallic-shimmer text-obsidian-deep font-label-caps text-[11px] px-12 py-6 tracking-[0.2em] font-bold mt-10">
-                    FALAR COM A DRA. NAIARA
-                </button>
-</div>
-</div>
-</div>
-</section>
-<!-- Testimonials -->
-<section class="py-section-padding relative overflow-hidden">
-<div class="max-w-container-max mx-auto px-inner-padding relative z-10">
-<div class="text-center mb-32">
-<span class="font-label-caps text-label-caps text-tertiary tracking-[0.6em] block mb-6">RECONHECIMENTO</span>
-<h2 class="font-headline-lg text-6xl text-white">Vozes da Justiça</h2>
-</div>
-<div class="grid md:grid-cols-3 gap-8">
-<div class="glass-card p-12 relative">
-<div class="text-tertiary mb-10 flex">
-<span class="material-symbols-outlined fill">star</span>
-<span class="material-symbols-outlined fill">star</span>
-<span class="material-symbols-outlined fill">star</span>
-<span class="material-symbols-outlined fill">star</span>
-<span class="material-symbols-outlined fill">star</span>
-</div>
-<p class="font-body-lg text-white/70 italic mb-12 leading-relaxed">"Atendimento que transcende o jurídico. Dra. Naiara conduziu meu caso com uma humanidade e competência que raras vezes vi no mercado."</p>
-<div class="flex items-center gap-4 border-t border-white/5 pt-8">
-<div class="w-10 h-10 rounded-full bg-tertiary/10 border border-tertiary/30"></div>
-<div>
-<p class="font-label-caps text-xs text-white tracking-widest">MARIANA S.</p>
-<p class="text-[10px] text-tertiary uppercase">Empresária</p>
-</div>
-</div>
-</div>
-<div class="glass-card p-12 relative bg-tertiary/5 scale-105 z-20 shadow-2xl">
-<div class="text-tertiary mb-10 flex">
-<span class="material-symbols-outlined fill">star</span>
-<span class="material-symbols-outlined fill">star</span>
-<span class="material-symbols-outlined fill">star</span>
-<span class="material-symbols-outlined fill">star</span>
-<span class="material-symbols-outlined fill">star</span>
-</div>
-<p class="font-body-lg text-white mb-12 leading-relaxed">"O foco estratégico e a clareza nas decisões foram fundamentais. Ela não apenas resolveu o problema, mas trouxe paz para minha família."</p>
-<div class="flex items-center gap-4 border-t border-white/5 pt-8">
-<div class="w-10 h-10 rounded-full bg-tertiary border border-tertiary"></div>
-<div>
-<p class="font-label-caps text-xs text-white tracking-widest">RICARDO OLIVEIRA</p>
-<p class="text-[10px] text-tertiary uppercase">Diretor Executivo</p>
-</div>
-</div>
-</div>
-<div class="glass-card p-12 relative">
-<div class="text-tertiary mb-10 flex">
-<span class="material-symbols-outlined fill">star</span>
-<span class="material-symbols-outlined fill">star</span>
-<span class="material-symbols-outlined fill">star</span>
-<span class="material-symbols-outlined fill">star</span>
-<span class="material-symbols-outlined fill">star</span>
-</div>
-<p class="font-body-lg text-white/70 italic mb-12 leading-relaxed">"Segurança absoluta em cada etapa. A transparência total nos deu a confiança necessária para enfrentar um processo longo e complexo."</p>
-<div class="flex items-center gap-4 border-t border-white/5 pt-8">
-<div class="w-10 h-10 rounded-full bg-tertiary/10 border border-tertiary/30"></div>
-<div>
-<p class="font-label-caps text-xs text-white tracking-widest">FERNANDA LIMA</p>
-<p class="text-[10px] text-tertiary uppercase">Servidora Pública</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Blog Section (Art Articles) -->
-<section class="py-section-padding relative" id="blog">
-<div class="max-w-container-max mx-auto px-inner-padding">
-<div class="flex justify-between items-end mb-24">
-<div>
-<span class="font-label-caps text-label-caps text-tertiary tracking-[0.5em] block mb-4">INSIGHTS</span>
-<h2 class="font-headline-lg text-6xl text-white">Artigos e Notícias</h2>
-</div>
-<a class="font-label-caps text-[10px] tracking-widest text-tertiary hover:text-white transition-colors border-b border-tertiary/50 pb-2" href="#">VER TODOS OS POSTS</a>
-</div>
-<div class="grid md:grid-cols-3 gap-12">
-<!-- Article 1 -->
-<article class="group cursor-pointer">
-<div class="relative overflow-hidden aspect-[4/3] mb-8 border border-white/5">
-<img class="w-full h-full object-cover grayscale brightness-75 group-hover:scale-110 group-hover:brightness-100 transition-all duration-1000" data-alt="Surreal macro of puzzle piece with golden glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWuRqJEulq6-0no57tUhVASZadnM5Izl6G3m57P1QA_LqtJCGIJVxX75Frqd9pG4HPo4acbUMuYzQVAXxtaft3-OAV1k5Pj610L3vxMIn5_faQ1ddrHuBdTcUMlTyOFPTV9tPKOfk8m8tKPRS4HXZejJBh2Nr8riwecjfnLCKjYGGHBi32ijVpuPth1zyfarmBMIU_EsfcXkNNKEUCzKGgXZCgY54RtNat-ig7Rpes8VTJ7A0zY0A2p3GPIBtkZJ0mRE9fwX-Pxvs"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div>
-</div>
-<span class="text-[10px] font-label-caps text-tertiary tracking-widest mb-4 block">DIREITOS &amp; SAÚDE</span>
-<h3 class="font-headline-md text-2xl text-white group-hover:text-gold-shimmer transition-colors mb-4">Autismo e Direitos na Saúde</h3>
-<p class="text-white/40 text-sm leading-relaxed line-clamp-2">Uma análise profunda sobre os novos precedentes jurídicos para o acesso a tratamentos especializados.</p>
-</article>
-<!-- Article 2 -->
-<article class="group cursor-pointer">
-<div class="relative overflow-hidden aspect-[4/3] mb-8 border border-white/5">
-<img class="w-full h-full object-cover grayscale brightness-75 group-hover:scale-110 group-hover:brightness-100 transition-all duration-1000" data-alt="Cinematic close-up of gold nib pen and formal document" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1rNmmAZRwV5bqTAcc_MxeWvr1Gzaf0EM_0BWJt9BVvi7xATcG1lYi4-trirTqcfEqzTfOZ6S0FjVechTqsz5FCnNh0BRsG5AfOv9mc3uN4Bucgd1hRFkgTZQc680-DRx3Tzjs8ykdEHxl9bNt1kY1H81odhVF2veWt2K9Wdv1P550TaRBIT1w5p6apMFcgdbxh1FQXCJTPmoyyvGGTU02HMGBq4q9pn7_WmC_f1mwuI7MvrXNRVfk2JVbyWu_C3aDibjBtt8Kip0"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div>
-</div>
-<span class="text-[10px] font-label-caps text-tertiary tracking-widest mb-4 block">DIREITO DE FAMÍLIA</span>
-<h3 class="font-headline-md text-2xl text-white group-hover:text-gold-shimmer transition-colors mb-4">Divórcio Impositivo</h3>
-<p class="text-white/40 text-sm leading-relaxed line-clamp-2">Entenda a autonomia da vontade e como o sistema jurídico brasileiro simplificou a dissolução matrimonial.</p>
-</article>
-<!-- Article 3 -->
-<article class="group cursor-pointer">
-<div class="relative overflow-hidden aspect-[4/3] mb-8 border border-white/5">
-<img class="w-full h-full object-cover grayscale brightness-75 group-hover:scale-110 group-hover:brightness-100 transition-all duration-1000" data-alt="Cinematic golden scales of justice balanced" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIrVok9pTk2Edd5PdSepburqpRBYFgNZgy_QZlCBRQtaf-cv31TK8fJzCepcolhosfeFR4gPIXEpoTidh2hTh2t6VJkec4ZNjJLqcppAyz_fG6qZAPdmoc9n7QoTxJMnSz_YgMi9CuFaly3mxefkLHP1_P0wBVzwmelNCjDeX9mH6UQKbMEQksSheZoLvoB828vmHokBqSA4H2omLjwdDw0uaUi60Z2qwygPjHVP2oCYFzQ5W5wzfId9kbFHz9kB3LjDdn_3Sd_Tw"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div>
-</div>
-<span class="text-[10px] font-label-caps text-tertiary tracking-widest mb-4 block">URGÊNCIA JURÍDICA</span>
-<h3 class="font-headline-md text-2xl text-white group-hover:text-gold-shimmer transition-colors mb-4">Divórcio Liminar</h3>
-<p class="text-white/40 text-sm leading-relaxed line-clamp-2">Quando o tempo é o maior inimigo da justiça: pedidos urgentes e proteção imediata de direitos.</p>
-</article>
-</div>
-</div>
-</section>
-<!-- Footer -->
-<footer class="pt-section-padding border-t border-white/5 relative overflow-hidden" id="contato">
-<div class="max-w-container-max mx-auto px-inner-padding relative z-10">
-<div class="grid lg:grid-cols-12 gap-16 mb-24">
-<div class="lg:col-span-5">
-<div class="flex items-center mb-10">
-<img src="logo.png" alt="Naiara Baldanza Logo" class="h-28 w-auto object-contain" />
-</div>
-<p class="text-white/40 text-lg leading-relaxed max-w-md mb-12">
-                    Defesa de direitos com elegância e autoridade. Atendimento exclusivo em Brasília e em todo o território nacional.
-                </p>
-<div class="flex gap-6">
-<a class="w-12 h-12 flex items-center justify-center border border-white/10 hover:border-tertiary hover:bg-tertiary/10 transition-all" href="#">
-<svg class="w-5 h-5 fill-white" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
-</a>
-<a class="w-12 h-12 flex items-center justify-center border border-white/10 hover:border-tertiary hover:bg-tertiary/10 transition-all" href="#">
-<svg class="w-5 h-5 fill-white" viewbox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.324v-21.35c0-.732-.593-1.325-1.325-1.325z"></path></svg>
-</a>
-</div>
-</div>
-<div class="lg:col-span-4">
-<h4 class="font-label-caps text-xs text-tertiary tracking-[0.4em] mb-10">LOCALIZAÇÃO</h4>
-<div class="space-y-8">
-<div class="flex gap-6 items-start">
-<span class="material-symbols-outlined text-tertiary">location_on</span>
-<p class="text-white/50 text-sm leading-relaxed">SHN Q.02, ED. EXEC. OFFICE TOWER, BLOCO F, SALA 625, Brasília - DF</p>
-</div>
-<div class="flex gap-6 items-start">
-<span class="material-symbols-outlined text-tertiary">call</span>
-<p class="text-white/50 text-sm">+55 (61) 99123-4567</p>
-</div>
-<div class="flex gap-6 items-start">
-<span class="material-symbols-outlined text-tertiary">mail</span>
-<p class="text-white/50 text-sm">contato@naiarabaldanza.adv.br</p>
-</div>
-</div>
-</div>
-<div class="lg:col-span-3">
-<h4 class="font-label-caps text-xs text-tertiary tracking-[0.4em] mb-10">NAVEGAÇÃO</h4>
-<ul class="space-y-6">
-<li><a class="text-white/50 text-sm hover:text-tertiary transition-colors uppercase tracking-widest font-label-caps text-[10px]" href="#">Agendar Consulta</a></li>
-<li><a class="text-white/50 text-sm hover:text-tertiary transition-colors uppercase tracking-widest font-label-caps text-[10px]" href="#">Artigos Recentes</a></li>
-<li><a class="text-white/50 text-sm hover:text-tertiary transition-colors uppercase tracking-widest font-label-caps text-[10px]" href="#">Áreas de Atuação</a></li>
-<li><a class="text-white/50 text-sm hover:text-tertiary transition-colors uppercase tracking-widest font-label-caps text-[10px]" href="#">Política de Dados</a></li>
-</ul>
-</div>
-</div>
-<div class="py-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] text-white/20 font-label-caps tracking-[0.2em] uppercase">
-<p>© 2024 NAIARA BALDANZA ADVOCACIA. TODOS OS DIREITOS RESERVADOS.</p>
-<p>DESIGNED BY LUXURY LEGAL STUDIO</p>
-</div>
-</div>
-</footer>
-<!-- WhatsApp Floating Button (Cinematic Style) -->
-<a class="fixed bottom-12 right-12 z-[100] group" href="#">
-<div class="absolute inset-0 bg-tertiary rounded-full blur group-hover:blur-xl opacity-30 group-hover:opacity-50 transition-all duration-500"></div>
-<div class="relative bg-obsidian-deep border border-tertiary/40 text-tertiary w-20 h-20 rounded-full flex items-center justify-center shadow-2xl transition-all duration-500 hover:scale-110 active:scale-95">
-<svg class="w-8 h-8 fill-current" viewbox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.891 11.888-11.891 3.181 0 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.402 0 6.556-5.332 11.891-11.888 11.891-2.012 0-3.987-.511-5.742-1.482l-6.254 1.701zm6.232-4.102c1.491.886 3.128 1.353 4.809 1.353 5.385 0 9.768-4.383 9.768-9.768 0-2.607-1.015-5.059-2.858-6.903-1.843-1.843-4.294-2.858-6.91-2.858-5.385 0-9.768 4.383-9.768 9.768 0 1.83.512 3.614 1.481 5.176l-.969 3.541 3.647-.99zm9.768-5.75c-.267-.134-1.58-.779-1.825-.869-.245-.09-.424-.134-.602.134-.178.268-.691.869-.846 1.048-.156.179-.311.201-.578.067-.267-.134-1.129-.416-2.15-1.328-.794-.708-1.33-1.582-1.486-1.85-.156-.268-.017-.413.118-.546.121-.12.267-.312.4-.469.134-.156.178-.268.267-.446.089-.178.044-.335-.022-.469-.067-.134-.602-1.451-.824-1.987-.217-.523-.436-.453-.602-.461-.156-.008-.334-.009-.512-.009-.178 0-.468.067-.712.335-.245.268-.936.915-.936 2.232s.958 2.589 1.091 2.768c.134.179 1.886 2.88 4.569 4.037.638.276 1.136.441 1.524.564.641.203 1.225.174 1.685.105.513-.077 1.58-.646 1.803-1.272.223-.627.223-1.163.156-1.272-.067-.109-.245-.179-.512-.313z"></path></svg>
-</div>
-<span class="absolute right-24 top-1/2 -translate-y-1/2 glass-card px-6 py-3 rounded-none text-xs font-label-caps tracking-widest text-white opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">CONTATO IMEDIATO</span>
-</a>
-</body></html>
+                <div class="flex flex-wrap gap-8">
+                    <button
+                        class="metallic-shimmer text-obsidian-deep font-label-caps text-[11px] px-12 py-6 tracking-[0.2em] font-bold">
+                        QUERO ENTRAR EM CONTATO
+                    </button>
+                    <button
+                        class="group relative px-12 py-6 font-label-caps text-[11px] tracking-[0.2em] text-white border border-white/20 hover:border-tertiary transition-all">
+                        <span class="relative z-10">NOSSAS ÁREAS</span>
+                        <div
+                            class="absolute inset-0 bg-tertiary scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 opacity-10">
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Expertise Areas -->
+    <section class="py-section-padding relative" id="areas">
+        <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-tertiary/30 to-transparent">
+        </div>
+        <div class="max-w-container-max mx-auto px-inner-padding">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-32 gap-8">
+                <div class="max-w-2xl">
+                    <span
+                        class="font-label-caps text-label-caps text-tertiary tracking-[0.4em] block mb-4">SOLUÇÕES</span>
+                    <h2 class="font-headline-lg text-headline-lg text-white text-6xl">Como podemos te ajudar?</h2>
+                </div>
+                <p class="text-white/40 max-w-sm font-light">Especialidades jurídicas focadas em resultados práticos e
+                    proteção de patrimônio e liberdade.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- Surreal Services Card Grid -->
+                <div class="glass-card p-12 group">
+                    <div
+                        class="mb-10 w-12 h-12 flex items-center justify-center border border-tertiary/30 group-hover:bg-tertiary/10 transition-all">
+                        <span class="material-symbols-outlined text-3xl">gavel</span>
+                    </div>
+                    <h3 class="font-headline-md text-2xl mb-6 text-white group-hover:text-gold-shimmer">Direito Cível
+                    </h3>
+                    <p class="font-body-md text-white/50 text-sm leading-relaxed">Soluções em contratos,
+                        responsabilidade civil e direitos reais com foco estratégico de alto nível.</p>
+                </div>
+                <div class="glass-card p-12 group">
+                    <div
+                        class="mb-10 w-12 h-12 flex items-center justify-center border border-tertiary/30 group-hover:bg-tertiary/10 transition-all">
+                        <span class="material-symbols-outlined text-3xl">work</span>
+                    </div>
+                    <h3 class="font-headline-md text-2xl mb-6 text-white group-hover:text-gold-shimmer">Trabalhista</h3>
+                    <p class="font-body-md text-white/50 text-sm leading-relaxed">Defesa rigorosa dos direitos do
+                        trabalhador e consultoria preventiva empresarial personalizada.</p>
+                </div>
+                <div class="glass-card p-12 group">
+                    <div
+                        class="mb-10 w-12 h-12 flex items-center justify-center border border-tertiary/30 group-hover:bg-tertiary/10 transition-all">
+                        <span class="material-symbols-outlined text-3xl">shopping_cart</span>
+                    </div>
+                    <h3 class="font-headline-md text-2xl mb-6 text-white group-hover:text-gold-shimmer">Consumidor</h3>
+                    <p class="font-body-md text-white/50 text-sm leading-relaxed">Proteção absoluta contra práticas
+                        abusivas e garantia do cumprimento das normas do CDC.</p>
+                </div>
+                <div class="glass-card p-12 group">
+                    <div
+                        class="mb-10 w-12 h-12 flex items-center justify-center border border-tertiary/30 group-hover:bg-tertiary/10 transition-all">
+                        <span class="material-symbols-outlined text-3xl">family_restroom</span>
+                    </div>
+                    <h3 class="font-headline-md text-2xl mb-6 text-white group-hover:text-gold-shimmer">Famílias</h3>
+                    <p class="font-body-md text-white/50 text-sm leading-relaxed">Abordagem humanizada e técnica em
+                        divórcios, guardas e planejamento sucessório.</p>
+                </div>
+                <div class="glass-card p-12 group">
+                    <div
+                        class="mb-10 w-12 h-12 flex items-center justify-center border border-tertiary/30 group-hover:bg-tertiary/10 transition-all">
+                        <span class="material-symbols-outlined text-3xl">account_balance</span>
+                    </div>
+                    <h3 class="font-headline-md text-2xl mb-6 text-white group-hover:text-gold-shimmer">Administrativo
+                    </h3>
+                    <p class="font-body-md text-white/50 text-sm leading-relaxed">Atuação cirúrgica em processos
+                        administrativos e relações complexas com o poder público.</p>
+                </div>
+                <div class="glass-card p-12 group">
+                    <div
+                        class="mb-10 w-12 h-12 flex items-center justify-center border border-tertiary/30 group-hover:bg-tertiary/10 transition-all">
+                        <span class="material-symbols-outlined text-3xl">school</span>
+                    </div>
+                    <h3 class="font-headline-md text-2xl mb-6 text-white group-hover:text-gold-shimmer">Concursos</h3>
+                    <p class="font-body-md text-white/50 text-sm leading-relaxed">Defesa técnica especializada em
+                        editais, reprovações injustas e preterição.</p>
+                </div>
+                <div class="glass-card p-12 group lg:col-span-2">
+                    <div class="flex justify-between items-start">
+                        <div class="max-w-md">
+                            <div
+                                class="mb-10 w-12 h-12 flex items-center justify-center border border-tertiary/30 group-hover:bg-tertiary/10 transition-all">
+                                <span class="material-symbols-outlined text-3xl">elderly</span>
+                            </div>
+                            <h3 class="font-headline-md text-2xl mb-6 text-white group-hover:text-gold-shimmer">
+                                Previdenciário</h3>
+                            <p class="font-body-md text-white/50 text-sm leading-relaxed">Consultoria completa para
+                                aposentadorias de alto valor, benefícios complexos e revisões estratégicas junto ao
+                                INSS.</p>
+                        </div>
+                        <div class="hidden md:block opacity-10 group-hover:opacity-20 transition-opacity">
+                            <span class="material-symbols-outlined text-9xl">history_edu</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Office (Surreal/Cinematic Overlap) -->
+    <section class="py-section-padding relative overflow-hidden" id="quem-somos">
+        <div class="max-w-container-max mx-auto px-inner-padding">
+            <div class="grid md:grid-cols-12 gap-gutter items-center">
+                <div class="md:col-span-6 relative">
+                    <div class="absolute -top-20 -left-20 w-80 h-80 bg-tertiary/10 blur-[120px] rounded-full"></div>
+                    <div class="relative group">
+                        <div
+                            class="absolute -inset-1 bg-gradient-to-r from-tertiary/20 to-transparent blur opacity-40 group-hover:opacity-100 transition duration-1000">
+                        </div>
+                        <div class="relative overflow-hidden aspect-[4/5] md:aspect-square">
+                            <img class="w-full h-full object-cover grayscale brightness-75 hover:scale-105 transition-transform duration-[2s]"
+                                data-alt="Cinematic luxury office with floating dust particles in light"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy21YmoNNMa-o5L55WIHf5CiL5KOIsF5lVx2VbmBfTxp5LXYo6u61duqBSYgE8iUxyzNp3iccLMvH-fFeanH7kv__dU7IwQUIO-Vh2KliBB7Wo8Q_ERsdyXl4mUmbvgR4Rj4i396-dyAmr4vBUOC4AW2mT15U0GpdMmphtQ1R4piv61NlKbFkprkrS9970dhnoDzCYFJPyVP1jjvmxLoRmfrpKSP5VFVAYYEgMK4xdBy8iu8o2pfBSPAWmtE8W664VlzgQG-xFfKY" />
+                        </div>
+                    </div>
+                    <!-- Overlapping surreal elements -->
+                    <div class="absolute -bottom-10 -right-10 glass-card p-10 hidden lg:block max-w-xs">
+                        <h4 class="text-tertiary font-label-caps text-xs mb-4 tracking-widest">VISÃO FUTURISTA</h4>
+                        <p class="text-white/60 text-xs italic">"Redefinindo o conceito de justiça através da inovação
+                            tecnológica e empatia humana."</p>
+                    </div>
+                </div>
+                <div class="md:col-span-6 md:pl-20 mt-24 md:mt-0">
+                    <span class="font-label-caps text-label-caps text-tertiary tracking-[0.5em] block mb-8">NOSSA
+                        ESSÊNCIA</span>
+                    <h2 class="font-headline-lg text-6xl text-white mb-12 leading-tight">Compromisso com a <br /><span
+                            class="text-gold-gradient">Ética e Lealdade.</span></h2>
+                    <div class="space-y-10">
+                        <p class="font-body-lg text-white/50 leading-relaxed">
+                            Nosso escritório nasceu com o propósito de transformar a advocacia em uma experiência de
+                            segurança absoluta. Acreditamos que o direito deve ser exercido com técnica impecável e
+                            estética refinada.
+                        </p>
+                        <p class="font-body-lg text-white/50 leading-relaxed border-l border-tertiary/30 pl-8">
+                            Cada caso é tratado de forma exclusiva, analisando todas as nuances microscópicas para
+                            construir a melhor defesa estratégica possível.
+                        </p>
+                        <div class="flex gap-16 pt-12">
+                            <div>
+                                <div class="text-5xl font-display-lg text-gold-shimmer mb-2">100%</div>
+                                <p class="font-label-caps text-[10px] text-white/40 tracking-widest uppercase">Casos
+                                    Exclusivos</p>
+                            </div>
+                            <div>
+                                <div class="text-5xl font-display-lg text-gold-shimmer mb-2">+10</div>
+                                <p class="font-label-caps text-[10px] text-white/40 tracking-widest uppercase">Anos de
+                                    Experiência</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Differentials (Three Surreal Blocks) -->
+    <section class="py-section-padding relative">
+        <div class="max-w-container-max mx-auto px-inner-padding">
+            <div class="grid md:grid-cols-3 gap-0 border border-white/5">
+                <div class="glass-card p-16 border-0 border-r border-white/5 hover:bg-tertiary/5 transition-colors">
+                    <span class="font-label-caps text-tertiary mb-10 block tracking-[0.4em]">MISSÃO</span>
+                    <p class="text-xl text-white/70 font-light leading-relaxed">Promover soluções jurídicas com
+                        excelência inquestionável, assegurando os direitos através de uma advocacia cirúrgica.</p>
+                </div>
+                <div
+                    class="glass-card p-16 border-0 border-r border-white/5 bg-white/[0.02] hover:bg-tertiary/5 transition-colors">
+                    <span class="font-label-caps text-tertiary mb-10 block tracking-[0.4em]">VISÃO</span>
+                    <p class="text-xl text-white/70 font-light leading-relaxed">Ser a bússola de justiça em um mundo
+                        complexo, reconhecida pela inovação constante e pelo impacto profundo.</p>
+                </div>
+                <div class="glass-card p-16 border-0 hover:bg-tertiary/5 transition-colors">
+                    <span class="font-label-caps text-tertiary mb-10 block tracking-[0.4em]">VALORES</span>
+                    <p class="text-xl text-white/70 font-light leading-relaxed">Ética inabalável, Lealdade aos
+                        princípios, Empatia real e Rigor Técnico absoluto em cada vírgula.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Profile Section (The Specialist) -->
+    <section class="py-section-padding bg-black/40 relative">
+        <div class="absolute top-0 right-0 w-1/2 h-full god-rays rotate-180 opacity-30"></div>
+        <div class="max-w-container-max mx-auto px-inner-padding grid md:grid-cols-12 gap-gutter items-center">
+            <div class="md:col-span-5 relative group">
+                <div
+                    class="absolute -inset-10 bg-tertiary/10 blur-[150px] opacity-0 group-hover:opacity-100 transition-opacity duration-1000">
+                </div>
+                <div
+                    class="relative aspect-[3/4] overflow-hidden grayscale brightness-90 hover:brightness-100 transition-all duration-700">
+                    <img alt="Dra. Naiara Baldanza" class="w-full h-full object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHbmxc9FC7lxDC775RczpQlILdw296bY_OheeFCyKrGpGqOkMqbqT-4h0WIpwWKj-GRLOEdm6xK6fgp62t9rRpptJ9yqxyICVBgT7llijvMHWBUy6Jr4i8qFUgDvLIJrwX39rnQYvwxA9h2MH7C_t1rjMeSXB2BmwWg5uEpkCzFkiTpVf6lZHXdUFziKPEh2kL9gxku53L-Ea577OehWCUbld5G6WBrcp6TwtYo--ddq0iunCTrjlBk2Bqp0xgHu5JOpQLg5zSwZ8" />
+                </div>
+                <!-- Surreal Signature Overlay -->
+                <div
+                    class="absolute -bottom-16 -right-16 text-[180px] font-display-lg text-tertiary/5 pointer-events-none select-none italic whitespace-nowrap hidden lg:block">
+                    Naiara Baldanza
+                </div>
+            </div>
+            <div class="md:col-span-7 md:pl-24 mt-20 md:mt-0">
+                <span class="font-label-caps text-label-caps text-tertiary tracking-[0.5em] block mb-6">A
+                    ESPECIALISTA</span>
+                <h2 class="font-display-lg text-7xl text-white mb-10 leading-tight">Dra. Naiara <br /><span
+                        class="text-gold-gradient">Baldanza</span></h2>
+                <div class="space-y-8">
+                    <p class="font-body-lg text-white/60 leading-relaxed text-xl">
+                        Advogada apaixonada pela justiça e membro ativo do <span
+                            class="text-tertiary font-medium">IBDFAM</span>. Minha trajetória é definida pela defesa
+                        intransigente e pela busca de soluções que equilibram o rigor da lei com a sensibilidade humana.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 py-10 border-y border-white/5">
+                        <div class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-tertiary mt-1">verified</span>
+                            <span class="font-body-md text-white/70">Especialista em Direito das Famílias e
+                                Sucessões</span>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-tertiary mt-1">verified</span>
+                            <span class="font-body-md text-white/70">Consultoria em Direito Civil e
+                                Administrativo</span>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-tertiary mt-1">verified</span>
+                            <span class="font-body-md text-white/70">Membro efetivo de comissões da OAB/DF</span>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <span class="material-symbols-outlined text-tertiary mt-1">verified</span>
+                            <span class="font-body-md text-white/70">Pós-graduada em Processo Estratégico</span>
+                        </div>
+                    </div>
+                    <button
+                        class="metallic-shimmer text-obsidian-deep font-label-caps text-[11px] px-12 py-6 tracking-[0.2em] font-bold mt-10">
+                        FALAR COM A DRA. NAIARA
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials -->
+    <section class="py-section-padding relative overflow-hidden">
+        <div class="max-w-container-max mx-auto px-inner-padding relative z-10">
+            <div class="text-center mb-32">
+                <span
+                    class="font-label-caps text-label-caps text-tertiary tracking-[0.6em] block mb-6">RECONHECIMENTO</span>
+                <h2 class="font-headline-lg text-6xl text-white">Vozes da Justiça</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-card p-12 relative">
+                    <div class="text-tertiary mb-10 flex">
+                        <span class="material-symbols-outlined fill">star</span>
+                        <span class="material-symbols-outlined fill">star</span>
+                        <span class="material-symbols-outlined fill">star</span>
+                        <span class="material-symbols-outlined fill">star</span>
+                        <span class="material-symbols-outlined fill">star</span>
+                    </div>
+                    <p class="font-body-lg text-white/70 italic mb-12 leading-relaxed">"Atendimento que transcende o
+                        jurídico. Dra. Naiara conduziu meu caso com uma humanidade e competência que raras vezes vi no
+                        mercado."</p>
+                    <div class="flex items-center gap-4 border-t border-white/5 pt-8">
+                        <div class="w-10 h-10 rounded-full bg-tertiary/10 border border-tertiary/30"></div>
+                        <div>
+                            <p class="font-label-caps text-xs text-white tracking-widest">MARIANA S.</p>
+                            <p class="text-[10px] text-tertiary uppercase">Empresária</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-card p-12 relative bg-tertiary/5 scale-105 z-20 shadow-2xl">
+                    <div class="text-tertiary mb-10 flex">
+                        <span class="material-symbols-outlined fill">star</span>
+                        <span class="material-symbols-outlined fill">star</span>
+                        <span class="material-symbols-outlined fill">star</span>
+                        <span class="material-symbols-outlined fill">star</span>
+                        <span class="material-symbols-outlined fill">star</span>
+                    </div>
+                    <p class="font-body-lg text-white mb-12 leading-relaxed">"O foco estratégico e a clareza nas
+                        decisões foram fundamentais. Ela não apenas resolveu o problema, mas trouxe paz para minha
+                        família."</p>
+                    <div class="flex items-center gap-4 border-t border-white/5 pt-8">
+                        <div class="w-10 h-10 rounded-full bg-tertiary border border-tertiary"></div>
+                        <div>
+                            <p class="font-label-caps text-xs text-white tracking-widest">RICARDO OLIVEIRA</p>
+                            <p class="text-[10px] text-tertiary uppercase">Diretor Executivo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-card p-12 relative">
+                    <div class="text-tertiary mb-10 flex">
+                        <span class="material-symbols-outlined fill">star</span>
+                        <span class="material-symbols-outlined fill">star</span>
+                        <span class="material-symbols-outlined fill">star</span>
+                        <span class="material-symbols-outlined fill">star</span>
+                        <span class="material-symbols-outlined fill">star</span>
+                    </div>
+                    <p class="font-body-lg text-white/70 italic mb-12 leading-relaxed">"Segurança absoluta em cada
+                        etapa. A transparência total nos deu a confiança necessária para enfrentar um processo longo e
+                        complexo."</p>
+                    <div class="flex items-center gap-4 border-t border-white/5 pt-8">
+                        <div class="w-10 h-10 rounded-full bg-tertiary/10 border border-tertiary/30"></div>
+                        <div>
+                            <p class="font-label-caps text-xs text-white tracking-widest">FERNANDA LIMA</p>
+                            <p class="text-[10px] text-tertiary uppercase">Servidora Pública</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section (Art Articles) -->
+    <section class="py-section-padding relative" id="blog">
+        <div class="max-w-container-max mx-auto px-inner-padding">
+            <div class="flex justify-between items-end mb-24">
+                <div>
+                    <span
+                        class="font-label-caps text-label-caps text-tertiary tracking-[0.5em] block mb-4">INSIGHTS</span>
+                    <h2 class="font-headline-lg text-6xl text-white">Artigos e Notícias</h2>
+                </div>
+                <a class="font-label-caps text-[10px] tracking-widest text-tertiary hover:text-white transition-colors border-b border-tertiary/50 pb-2"
+                    href="#">VER TODOS OS POSTS</a>
+            </div>
+            <div class="grid md:grid-cols-3 gap-12">
+                <!-- Article 1 -->
+                <article class="group cursor-pointer">
+                    <div class="relative overflow-hidden aspect-[4/3] mb-8 border border-white/5">
+                        <img class="w-full h-full object-cover grayscale brightness-75 group-hover:scale-110 group-hover:brightness-100 transition-all duration-1000"
+                            data-alt="Surreal macro of puzzle piece with golden glow"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWuRqJEulq6-0no57tUhVASZadnM5Izl6G3m57P1QA_LqtJCGIJVxX75Frqd9pG4HPo4acbUMuYzQVAXxtaft3-OAV1k5Pj610L3vxMIn5_faQ1ddrHuBdTcUMlTyOFPTV9tPKOfk8m8tKPRS4HXZejJBh2Nr8riwecjfnLCKjYGGHBi32ijVpuPth1zyfarmBMIU_EsfcXkNNKEUCzKGgXZCgY54RtNat-ig7Rpes8VTJ7A0zY0A2p3GPIBtkZJ0mRE9fwX-Pxvs" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60">
+                        </div>
+                    </div>
+                    <span class="text-[10px] font-label-caps text-tertiary tracking-widest mb-4 block">DIREITOS &amp;
+                        SAÚDE</span>
+                    <h3
+                        class="font-headline-md text-2xl text-white group-hover:text-gold-shimmer transition-colors mb-4">
+                        Autismo e Direitos na Saúde</h3>
+                    <p class="text-white/40 text-sm leading-relaxed line-clamp-2">Uma análise profunda sobre os novos
+                        precedentes jurídicos para o acesso a tratamentos especializados.</p>
+                </article>
+                <!-- Article 2 -->
+                <article class="group cursor-pointer">
+                    <div class="relative overflow-hidden aspect-[4/3] mb-8 border border-white/5">
+                        <img class="w-full h-full object-cover grayscale brightness-75 group-hover:scale-110 group-hover:brightness-100 transition-all duration-1000"
+                            data-alt="Cinematic close-up of gold nib pen and formal document"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1rNmmAZRwV5bqTAcc_MxeWvr1Gzaf0EM_0BWJt9BVvi7xATcG1lYi4-trirTqcfEqzTfOZ6S0FjVechTqsz5FCnNh0BRsG5AfOv9mc3uN4Bucgd1hRFkgTZQc680-DRx3Tzjs8ykdEHxl9bNt1kY1H81odhVF2veWt2K9Wdv1P550TaRBIT1w5p6apMFcgdbxh1FQXCJTPmoyyvGGTU02HMGBq4q9pn7_WmC_f1mwuI7MvrXNRVfk2JVbyWu_C3aDibjBtt8Kip0" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60">
+                        </div>
+                    </div>
+                    <span class="text-[10px] font-label-caps text-tertiary tracking-widest mb-4 block">DIREITO DE
+                        FAMÍLIA</span>
+                    <h3
+                        class="font-headline-md text-2xl text-white group-hover:text-gold-shimmer transition-colors mb-4">
+                        Divórcio Impositivo</h3>
+                    <p class="text-white/40 text-sm leading-relaxed line-clamp-2">Entenda a autonomia da vontade e como
+                        o sistema jurídico brasileiro simplificou a dissolução matrimonial.</p>
+                </article>
+                <!-- Article 3 -->
+                <article class="group cursor-pointer">
+                    <div class="relative overflow-hidden aspect-[4/3] mb-8 border border-white/5">
+                        <img class="w-full h-full object-cover grayscale brightness-75 group-hover:scale-110 group-hover:brightness-100 transition-all duration-1000"
+                            data-alt="Cinematic golden scales of justice balanced"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIrVok9pTk2Edd5PdSepburqpRBYFgNZgy_QZlCBRQtaf-cv31TK8fJzCepcolhosfeFR4gPIXEpoTidh2hTh2t6VJkec4ZNjJLqcppAyz_fG6qZAPdmoc9n7QoTxJMnSz_YgMi9CuFaly3mxefkLHP1_P0wBVzwmelNCjDeX9mH6UQKbMEQksSheZoLvoB828vmHokBqSA4H2omLjwdDw0uaUi60Z2qwygPjHVP2oCYFzQ5W5wzfId9kbFHz9kB3LjDdn_3Sd_Tw" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60">
+                        </div>
+                    </div>
+                    <span class="text-[10px] font-label-caps text-tertiary tracking-widest mb-4 block">URGÊNCIA
+                        JURÍDICA</span>
+                    <h3
+                        class="font-headline-md text-2xl text-white group-hover:text-gold-shimmer transition-colors mb-4">
+                        Divórcio Liminar</h3>
+                    <p class="text-white/40 text-sm leading-relaxed line-clamp-2">Quando o tempo é o maior inimigo da
+                        justiça: pedidos urgentes e proteção imediata de direitos.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="pt-section-padding border-t border-white/5 relative overflow-hidden" id="contato">
+        <div class="max-w-container-max mx-auto px-inner-padding relative z-10">
+            <div class="grid lg:grid-cols-12 gap-16 mb-24">
+                <div class="lg:col-span-5">
+                    <div class="flex items-center mb-10">
+                        <img src="logo.png" alt="Naiara Baldanza Logo" class="h-28 w-auto object-contain" />
+                    </div>
+                    <p class="text-white/40 text-lg leading-relaxed max-w-md mb-12">
+                        Defesa de direitos com elegância e autoridade. Atendimento exclusivo em Brasília e em todo o
+                        território nacional.
+                    </p>
+                    <div class="flex gap-6">
+                        <a class="w-12 h-12 flex items-center justify-center border border-white/10 hover:border-tertiary hover:bg-tertiary/10 transition-all"
+                            href="#">
+                            <svg class="w-5 h-5 fill-white" viewbox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="w-12 h-12 flex items-center justify-center border border-white/10 hover:border-tertiary hover:bg-tertiary/10 transition-all"
+                            href="#">
+                            <svg class="w-5 h-5 fill-white" viewbox="0 0 24 24">
+                                <path
+                                    d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.324v-21.35c0-.732-.593-1.325-1.325-1.325z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-4">
+                    <h4 class="font-label-caps text-xs text-tertiary tracking-[0.4em] mb-10">LOCALIZAÇÃO</h4>
+                    <div class="space-y-8">
+                        <div class="flex gap-6 items-start">
+                            <span class="material-symbols-outlined text-tertiary">location_on</span>
+                            <p class="text-white/50 text-sm leading-relaxed">SHN Q.02, ED. EXEC. OFFICE TOWER, BLOCO F,
+                                SALA 625, Brasília - DF</p>
+                        </div>
+                        <div class="flex gap-6 items-start">
+                            <span class="material-symbols-outlined text-tertiary">call</span>
+                            <p class="text-white/50 text-sm">+55 (61) 99123-4567</p>
+                        </div>
+                        <div class="flex gap-6 items-start">
+                            <span class="material-symbols-outlined text-tertiary">mail</span>
+                            <p class="text-white/50 text-sm">contato@naiarabaldanza.adv.br</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-3">
+                    <h4 class="font-label-caps text-xs text-tertiary tracking-[0.4em] mb-10">NAVEGAÇÃO</h4>
+                    <ul class="space-y-6">
+                        <li><a class="text-white/50 text-sm hover:text-tertiary transition-colors uppercase tracking-widest font-label-caps text-[10px]"
+                                href="#">Agendar Consulta</a></li>
+                        <li><a class="text-white/50 text-sm hover:text-tertiary transition-colors uppercase tracking-widest font-label-caps text-[10px]"
+                                href="#">Artigos Recentes</a></li>
+                        <li><a class="text-white/50 text-sm hover:text-tertiary transition-colors uppercase tracking-widest font-label-caps text-[10px]"
+                                href="#">Áreas de Atuação</a></li>
+                        <li><a class="text-white/50 text-sm hover:text-tertiary transition-colors uppercase tracking-widest font-label-caps text-[10px]"
+                                href="#">Política de Dados</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="py-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] text-white/20 font-label-caps tracking-[0.2em] uppercase">
+                <p>© 2024 NAIARA BALDANZA ADVOCACIA. TODOS OS DIREITOS RESERVADOS.</p>
+                <p>DESIGNED BY LUXURY LEGAL STUDIO</p>
+            </div>
+        </div>
+    </footer>
+    <!-- WhatsApp Floating Button (Cinematic Style) -->
+    <a class="fixed bottom-12 right-12 z-[100] group" href="#">
+        <div
+            class="absolute inset-0 bg-tertiary rounded-full blur group-hover:blur-xl opacity-30 group-hover:opacity-50 transition-all duration-500">
+        </div>
+        <div
+            class="relative bg-obsidian-deep border border-tertiary/40 text-tertiary w-20 h-20 rounded-full flex items-center justify-center shadow-2xl transition-all duration-500 hover:scale-110 active:scale-95">
+            <svg class="w-8 h-8 fill-current" viewbox="0 0 24 24">
+                <path
+                    d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.891 11.888-11.891 3.181 0 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.402 0 6.556-5.332 11.891-11.888 11.891-2.012 0-3.987-.511-5.742-1.482l-6.254 1.701zm6.232-4.102c1.491.886 3.128 1.353 4.809 1.353 5.385 0 9.768-4.383 9.768-9.768 0-2.607-1.015-5.059-2.858-6.903-1.843-1.843-4.294-2.858-6.91-2.858-5.385 0-9.768 4.383-9.768 9.768 0 1.83.512 3.614 1.481 5.176l-.969 3.541 3.647-.99zm9.768-5.75c-.267-.134-1.58-.779-1.825-.869-.245-.09-.424-.134-.602.134-.178.268-.691.869-.846 1.048-.156.179-.311.201-.578.067-.267-.134-1.129-.416-2.15-1.328-.794-.708-1.33-1.582-1.486-1.85-.156-.268-.017-.413.118-.546.121-.12.267-.312.4-.469.134-.156.178-.268.267-.446.089-.178.044-.335-.022-.469-.067-.134-.602-1.451-.824-1.987-.217-.523-.436-.453-.602-.461-.156-.008-.334-.009-.512-.009-.178 0-.468.067-.712.335-.245.268-.936.915-.936 2.232s.958 2.589 1.091 2.768c.134.179 1.886 2.88 4.569 4.037.638.276 1.136.441 1.524.564.641.203 1.225.174 1.685.105.513-.077 1.58-.646 1.803-1.272.223-.627.223-1.163.156-1.272-.067-.109-.245-.179-.512-.313z">
+                </path>
+            </svg>
+        </div>
+        <span
+            class="absolute right-24 top-1/2 -translate-y-1/2 glass-card px-6 py-3 rounded-none text-xs font-label-caps tracking-widest text-white opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">CONTATO
+            IMEDIATO</span>
+    </a>
+</body>
+
+</html>
