@@ -52,26 +52,6 @@ export const OurOffice: React.FC<ReadonlyOurOfficeProps> = ({
                     />
                   </AnimatePresence>
                   
-                  {/* Modern Arrows */}
-                  {displayImages.length > 1 && (
-                    <>
-                      <button
-                        onClick={() => setCurrentIndex((prev) => (prev === 0 ? displayImages.length - 1 : prev - 1))}
-                        className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-black/20 backdrop-blur-md flex items-center justify-center text-white/70 hover:text-white hover:bg-black/40 transition-all z-20 border border-white/10 opacity-0 group-hover:opacity-100"
-                        aria-label="Foto anterior"
-                      >
-                        <ChevronLeft size={24} strokeWidth={1.5} />
-                      </button>
-                      <button
-                        onClick={() => setCurrentIndex((prev) => (prev + 1) % displayImages.length)}
-                        className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-black/20 backdrop-blur-md flex items-center justify-center text-white/70 hover:text-white hover:bg-black/40 transition-all z-20 border border-white/10 opacity-0 group-hover:opacity-100"
-                        aria-label="Próxima foto"
-                      >
-                        <ChevronRight size={24} strokeWidth={1.5} />
-                      </button>
-                    </>
-                  )}
-
                   {/* Cinematic progress indicators */}
                   {displayImages.length > 1 && (
                     <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-20">
@@ -79,8 +59,8 @@ export const OurOffice: React.FC<ReadonlyOurOfficeProps> = ({
                         <button
                           key={idx}
                           onClick={() => setCurrentIndex(idx)}
-                          className={`h-0.5 transition-all duration-700 ${
-                            idx === currentIndex ? 'w-8 bg-tertiary' : 'w-4 bg-white/20 hover:bg-white/40'
+                          className={`h-1 transition-all duration-700 rounded-full shadow-lg ${
+                            idx === currentIndex ? 'w-10 bg-tertiary shadow-tertiary/50' : 'w-4 bg-white/30 hover:bg-white/60'
                           }`}
                           aria-label={`Go to slide ${idx + 1}`}
                         />
@@ -88,6 +68,26 @@ export const OurOffice: React.FC<ReadonlyOurOfficeProps> = ({
                     </div>
                   )}
                 </div>
+
+                {/* Modern Arrows - positioned halfway outside */}
+                {displayImages.length > 1 && (
+                  <>
+                    <button
+                      onClick={() => setCurrentIndex((prev) => (prev === 0 ? displayImages.length - 1 : prev - 1))}
+                      className="absolute -left-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-tertiary hover:text-white hover:bg-black/80 transition-all z-30 border border-tertiary/30 shadow-[0_0_20px_rgba(0,0,0,0.8)] hover:scale-110"
+                      aria-label="Foto anterior"
+                    >
+                      <ChevronLeft size={24} strokeWidth={1.5} />
+                    </button>
+                    <button
+                      onClick={() => setCurrentIndex((prev) => (prev + 1) % displayImages.length)}
+                      className="absolute -right-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-tertiary hover:text-white hover:bg-black/80 transition-all z-30 border border-tertiary/30 shadow-[0_0_20px_rgba(0,0,0,0.8)] hover:scale-110"
+                      aria-label="Próxima foto"
+                    >
+                      <ChevronRight size={24} strokeWidth={1.5} />
+                    </button>
+                  </>
+                )}
               </div>
             </FadeIn>
             
