@@ -67,7 +67,7 @@ export const mockData = {
     ]
   },
   ourOffice: {
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBy21YmoNNMa-o5L55WIHf5CiL5KOIsF5lVx2VbmBfTxp5LXYo6u61duqBSYgE8iUxyzNp3iccLMvH-fFeanH7kv__dU7IwQUIO-Vh2KliBB7Wo8Q_ERsdyXl4mUmbvgR4Rj4i396-dyAmr4vBUOC4AW2mT15U0GpdMmphtQ1R4piv61NlKbFkprkrS9970dhnoDzCYFJPyVP1jjvmxLoRmfrpKSP5VFVAYYEgMK4xdBy8iu8o2pfBSPAWmtE8W664VlzgQG-xFfKY",
+    images: ["/fotos/1.png", "/fotos/2.png", "/fotos/3.png", "/fotos/4.png", "/fotos/5.png"],
     floatingLabel: "VISÃO FUTURISTA",
     floatingText: "\"Redefinindo o conceito de justiça através da inovação tecnológica e empatia humana.\"",
     subtitle: "NOSSA ESSÊNCIA",

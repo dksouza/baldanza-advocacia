@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { FadeIn } from './FadeIn';
 
 export interface ReadonlyOurOfficeProps {
-  readonly image: string;
+  readonly images?: readonly string[];
+  readonly image?: string;
   readonly floatingLabel: string;
   readonly floatingText: string;
   readonly subtitle: string;
@@ -13,8 +15,19 @@ export interface ReadonlyOurOfficeProps {
 }
 
 export const OurOffice: React.FC<ReadonlyOurOfficeProps> = ({
-  image, floatingLabel, floatingText, subtitle, titlePart1, titleHighlight, paragraphs, stats
+  images, image, floatingLabel, floatingText, subtitle, titlePart1, titleHighlight, paragraphs, stats
 }) => {
+  const displayImages = images || (image ? [image] : []);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    if (displayImages.length <= 1) return;
+    const timer = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % displayImages.length);
+    }, 4500); // Cinematic slow crossfade timing
+    return () => clearInterval(timer);
+  }, [displayImages.length]);
+
   return (
     <section className="py-section-padding relative overflow-hidden" id="quem-somos">
       <div className="max-w-container-max mx-auto px-inner-padding">
@@ -24,8 +37,35 @@ export const OurOffice: React.FC<ReadonlyOurOfficeProps> = ({
               <div className="absolute -top-20 -left-20 w-80 h-80 bg-tertiary/10 blur-[120px] rounded-full"></div>
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-tertiary/20 to-transparent blur opacity-40 group-hover:opacity-100 transition duration-1000"></div>
-                <div className="relative overflow-hidden aspect-[4/5] md:aspect-square">
-                  <img className="w-full h-full object-cover grayscale brightness-75 hover:scale-105 transition-transform duration-[2s]" alt="Office" src={image} />
+                <div className="relative overflow-hidden aspect-[4/5] md:aspect-square bg-black">
+                  <AnimatePresence mode="popLayout">
+                    <motion.img
+                      key={currentIndex}
+                      src={displayImages[currentIndex]}
+                      alt="Office"
+                      initial={{ opacity: 0, scale: 1.05 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      exit={{ opacity: 0, scale: 1.05 }}
+                      transition={{ opacity: { duration: 1.5, ease: "easeInOut" }, scale: { duration: 6, ease: "easeOut" } }}
+                      className="absolute inset-0 w-full h-full object-cover grayscale brightness-75 hover:scale-105 transition-transform duration-[2s]"
+                    />
+                  </AnimatePresence>
+                  
+                  {/* Cinematic progress indicators */}
+                  {displayImages.length > 1 && (
+                    <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+                      {displayImages.map((_, idx) => (
+                        <button
+                          key={idx}
+                          onClick={() => setCurrentIndex(idx)}
+                          className={`h-0.5 transition-all duration-700 ${
+                            idx === currentIndex ? 'w-8 bg-tertiary' : 'w-4 bg-white/20 hover:bg-white/40'
+                          }`}
+                          aria-label={`Go to slide ${idx + 1}`}
+                        />
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             </FadeIn>
