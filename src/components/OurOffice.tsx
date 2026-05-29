@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { FadeIn } from './FadeIn';
 
 export interface ReadonlyOurOfficeProps {
@@ -47,10 +48,30 @@ export const OurOffice: React.FC<ReadonlyOurOfficeProps> = ({
                       animate={{ opacity: 1, scale: 1 }}
                       exit={{ opacity: 0, scale: 1.05 }}
                       transition={{ opacity: { duration: 1.5, ease: "easeInOut" }, scale: { duration: 6, ease: "easeOut" } }}
-                      className="absolute inset-0 w-full h-full object-cover grayscale brightness-75 hover:scale-105 transition-transform duration-[2s]"
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-[2s]"
                     />
                   </AnimatePresence>
                   
+                  {/* Modern Arrows */}
+                  {displayImages.length > 1 && (
+                    <>
+                      <button
+                        onClick={() => setCurrentIndex((prev) => (prev === 0 ? displayImages.length - 1 : prev - 1))}
+                        className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-black/20 backdrop-blur-md flex items-center justify-center text-white/70 hover:text-white hover:bg-black/40 transition-all z-20 border border-white/10 opacity-0 group-hover:opacity-100"
+                        aria-label="Foto anterior"
+                      >
+                        <ChevronLeft size={24} strokeWidth={1.5} />
+                      </button>
+                      <button
+                        onClick={() => setCurrentIndex((prev) => (prev + 1) % displayImages.length)}
+                        className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-black/20 backdrop-blur-md flex items-center justify-center text-white/70 hover:text-white hover:bg-black/40 transition-all z-20 border border-white/10 opacity-0 group-hover:opacity-100"
+                        aria-label="Próxima foto"
+                      >
+                        <ChevronRight size={24} strokeWidth={1.5} />
+                      </button>
+                    </>
+                  )}
+
                   {/* Cinematic progress indicators */}
                   {displayImages.length > 1 && (
                     <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-20">
