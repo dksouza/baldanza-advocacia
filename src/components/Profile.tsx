@@ -16,7 +16,7 @@ export const Profile: React.FC<ReadonlyProfileProps> = ({
   image, subtitle, titlePart1, titleHighlight, description, bulletPoints, ctaButton
 }) => {
   return (
-    <section className="py-section-padding bg-black/40 relative">
+    <section className="pt-12 pb-24 md:py-section-padding bg-black/40 relative">
       <div className="absolute top-0 right-0 w-1/2 h-full god-rays rotate-180 opacity-30"></div>
       <div className="max-w-container-max mx-auto px-inner-padding grid md:grid-cols-12 gap-gutter items-center">
         <div className="md:col-span-5 relative group">

@@ -30,7 +30,7 @@ export const OurOffice: React.FC<ReadonlyOurOfficeProps> = ({
   }, [displayImages.length]);
 
   return (
-    <section className="py-section-padding relative overflow-hidden" id="quem-somos">
+    <section className="pt-24 pb-12 md:py-section-padding relative overflow-hidden" id="quem-somos">
       <div className="max-w-container-max mx-auto px-inner-padding">
         <div className="grid md:grid-cols-12 gap-gutter items-center">
           <div className="md:col-span-6 relative">

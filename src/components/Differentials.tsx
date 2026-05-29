@@ -10,7 +10,7 @@ export interface ReadonlyDifferentialsProps {
 
 export const Differentials: React.FC<ReadonlyDifferentialsProps> = ({ items }) => {
   return (
-    <section className="py-section-padding relative">
+    <section className="py-12 md:py-section-padding relative">
       <div className="max-w-container-max mx-auto px-inner-padding">
         <div className="grid md:grid-cols-3 gap-0 border border-white/5">
           {items.map((item, idx) => (
