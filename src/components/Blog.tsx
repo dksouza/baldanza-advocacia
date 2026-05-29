@@ -15,7 +15,8 @@ export interface ReadonlyBlogProps {
 
 export const Blog: React.FC<ReadonlyBlogProps> = ({ subtitle, title, seeAllText, articles }) => {
   return (
-    <section className="py-section-padding relative" id="blog">
+    <section className="py-16 md:py-24 relative" id="blog">
+      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-tertiary/20 to-transparent"></div>
       <div className="max-w-container-max mx-auto px-inner-padding">
         <FadeIn delay={0.1} direction="up">
           <div className="flex justify-between items-end mb-24">

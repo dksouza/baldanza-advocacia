@@ -14,7 +14,8 @@ export interface ReadonlyTestimonialsProps {
 
 export const Testimonials: React.FC<ReadonlyTestimonialsProps> = ({ subtitle, title, items }) => {
   return (
-    <section className="py-section-padding relative overflow-hidden">
+    <section className="py-16 md:py-24 relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
       <div className="max-w-container-max mx-auto px-inner-padding relative z-10">
         <FadeIn delay={0.1} direction="up">
           <div className="text-center mb-32">
